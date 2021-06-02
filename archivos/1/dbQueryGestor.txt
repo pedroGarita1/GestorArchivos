@@ -1,0 +1,29 @@
+<--t_categorias-->
+CREATE TABLE `gestor`.`t_categorias` (
+  `id_categoria` INT NOT NULL AUTO_INCREMENT,
+  `id_usuario` INT NOT NULL,
+  `nombre` VARCHAR(25) NOT NULL,
+  `fechaInsert` DATETIME NULL DEFAULT now(),
+  PRIMARY KEY (`id_categoria`));
+
+<--Foreing Key t_categorias-->
+ALTER TABLE `gestor`.`t_categorias` 
+ADD INDEX `fkCategoriaUsuario_idx` (`id_usuario` ASC);
+;
+ALTER TABLE `gestor`.`t_categorias` 
+ADD CONSTRAINT `fkCategoriaUsuario`
+  FOREIGN KEY (`id_usuario`)
+  REFERENCES `gestor`.`t_usuarios` (`id_usuario`)
+  ON DELETE NO ACTION
+  ON UPDATE NO ACTION;
+
+<--t_archivos-->
+
+CREATE TABLE `gestor`.`t_archivos` (
+  `id_archivos` INT NOT NULL AUTO_INCREMENT,
+  `id_categoria` INT NULL,
+  `nombre` VARCHAR(255) NULL,
+  `tipo` VARCHAR(255) NULL,
+  `ruta` TEXT NULL,
+  `fecha` DATETIME NOT NULL DEFAULT now(),
+  PRIMARY KEY (`id_archivos`));
