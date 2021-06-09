@@ -1,0 +1,21 @@
+Jimenez Garita Pedro Octavio 191190085			01/03/2021
+<------------------------------------->
+        Examen Diagnostico
+TAP
+<===---===---===---===---===---===---===---===---===---===>
+
+1.- ¿Que es HTML? 
+--Es un lenguaje marcado para el desarrollo Web
+
+2.- Define el contexto de etiqueta en HTML
+--Son palabras que definen la accion a realizar.
+
+3.- Que es un valor de atributo
+--Es el nombre que se va a emplear. En el requisito de datos. 
+--Por ejemplo "text"
+
+4.- Indica que significa CSS3
+--Es Hoja de estilo en cascada.
+
+5.- Que sabes hacer en JS?
+Nada.
